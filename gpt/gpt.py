@@ -6,11 +6,12 @@ import math
 from torch.nn import functional as F
 
 
-class TransformerEncoder(nn.Module):
-    def __init__(self, nembed):
-
-
 class GPT2(nn.Module):
-    __init__(self, config: ModelConfig=ModelConfig()):
+    def __init__(self, config: ModelConfig = ModelConfig()):
         super().__init__()
-        config.
+        self.config = config
+
+        self.transformer = nn.ModuleDict('tf': nn.ModuleList([TransformerBlock(config.embed_dim) for i in range(config.num_blocks])))
+
+    def forward(self, input, target=None):
+        pass
