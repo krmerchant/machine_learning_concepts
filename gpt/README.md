@@ -1,6 +1,6 @@
 # Overview
 
-This is my best my best attempt at making a GPT from scratch. Based on Karpathy's minGPT.
+This is my best my best attempt at making GPT 3.0 (ish) from scratch. Based on Karpathy's minGPT.
 
 
 
